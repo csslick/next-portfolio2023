@@ -1,11 +1,21 @@
-import React from 'react'
+import { aboutText } from "@/constants/constants";
+import Timeline from "@/components/Timeline";
 
 export default function About() {
+
   return (
     <main className="about">
-      <div className="container">
-        <h2>About</h2>
-      </div>
+      <section>
+        <header>
+          <h2>소개합니다</h2>
+          <p>{aboutText}</p>
+        </header>
+
+        <article>
+          <h2>Experience</h2>
+          <Timeline />
+        </article>
+      </section>
     </main>
   )
 }
