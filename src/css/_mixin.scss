@@ -1,0 +1,13 @@
+// _mixin.scss
+
+@mixin flex($main: start, $cross: start) {
+  display: flex;
+  justify-content: $main;
+  align-items: $cross;
+}
+
+@mixin container($width) {
+  max-width: $width+px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}

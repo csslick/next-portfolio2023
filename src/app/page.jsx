@@ -1,9 +1,9 @@
-import styles from './page.module.scss'
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>Next Portfolio</h1>
+    <main className="home">
+      <div className="container">
+        <h2>Home</h2>
+      </div>
     </main>
   )
 }
