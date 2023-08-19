@@ -2,6 +2,7 @@ import './globals.scss'
 import { Noto_Sans_KR } from 'next/font/google'
 import favicon from './favicon.svg'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const notoSansKR = Noto_Sans_KR({ 
   weight: ['300', '400', '500', '700'],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={notoSansKR.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
