@@ -1,6 +1,6 @@
 // _mixin.scss
 
-@mixin flex($main: start, $cross: start) {
+@mixin flex($main: flex-start, $cross: flex-start) {
   display: flex;
   justify-content: $main;
   align-items: $cross;

@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import profile from '../assets/images/profile.jpg'
+
 export default function Home() {
   return (
     <main className="home">
@@ -8,7 +11,11 @@ export default function Home() {
           <a href="/about" className="btn-cta">자세히 보기</a>
         </div>
         <figure>
-          <img src={profile} alt="홍리나" />
+          <Image 
+            priority={true}
+            src={profile}
+            alt="홍리나"
+          />
         </figure>
       </section>
     </main>
