@@ -1,11 +1,24 @@
-import React from 'react'
+import ProjectItem from "@/components/ProjectItem"
+import { projectList } from "@/constants/constants";
 
 export default function Projects() {
   return (
     <main className="projects">
-      <div className="container">
-        <h2>Projects</h2>
-      </div>
+      <section>
+        <h2>프로젝트</h2>
+        <div className="project-list">
+          {projectList.map((project, i) => {
+            return (
+              <ProjectItem
+                title={project.title}
+                image={project.image}
+                id={i}
+                key={i}
+              />
+            )
+          })}
+        </div>
+      </section>
     </main>
   )
 }
