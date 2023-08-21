@@ -9,7 +9,7 @@ export default function Detail(props) {
     skills,
     url,
     text
-  } = projectList[0]; // 2
+  } = projectList[props.params.id]; // 2
 
   return (
     <main className="detail">
